@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SeriesGuide</string>
+    <string name="title_episodesplit_list">EpisodeSplit</string>
+    <string name="title_episodesplit_detail">EpisodeSplit Detail</string>
+    <string name="title_episode_list">Episodes</string>
+    <string name="title_episode_detail">Episode Detail</string>
+</resources>

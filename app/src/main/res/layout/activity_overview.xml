@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/espisode_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+    <ScrollView
+        android:id="@+id/ep_details_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="762dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <ImageView
+                android:id="@+id/ep_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goToSeasons"
+                app:srcCompat="@drawable/download"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="49dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginLeft="27dp"
+                    app:srcCompat="@drawable/ic_check_black_24dp"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="223dp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="67dp"
+                    android:layout_height="37dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_turned_in_not_black_24dp"
+                    tools:layout_editor_absoluteX="159dp"
+                    tools:layout_editor_absoluteY="223dp" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="67dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginRight="33dp"
+                    app:srcCompat="@drawable/ic_skip_next_black_24dp"
+                    tools:layout_editor_absoluteX="291dp"
+                    tools:layout_editor_absoluteY="223dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"
+                    android:text="Set watched"
+                    android:textColor="@android:color/white"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="274dp" />
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Add to collection"
+                    android:textColor="@android:color/white"
+                    tools:layout_editor_absoluteX="139dp"
+                    tools:layout_editor_absoluteY="274dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    android:text="Skip"
+                    android:textColor="@android:color/white"
+                    tools:layout_editor_absoluteX="309dp"
+                    tools:layout_editor_absoluteY="274dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="368dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="301dp" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="49dp"
+                android:layout_height="46dp"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="311dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="155dp"
+                android:layout_height="35dp"
+                android:text="Stream or purchase"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="76dp"
+                tools:layout_editor_absoluteY="322dp" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="368dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="367dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="337dp"
+                android:layout_height="67dp"
+                android:text="Vivien and Violet get themselves caught in a dangerous situation. Meanwhile, Ben goes back to Boston to fix a mistake that he made."
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="382dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="138dp"
+                android:layout_height="18dp"
+                android:text="Source: ThTVDB"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="449dp" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last edited: March 29, 2:57 PM"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="27dp"
+                tools:layout_editor_absoluteY="467dp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="360dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="499dp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="155dp"
+                android:layout_height="29dp"
+                android:text="7.9/10    2457 votes\ntrakt"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="126dp"
+                tools:layout_editor_absoluteY="500dp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:text="      RATE\n Your rating"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="531dp" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="368dp"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="606dp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DVD Episode\n1.0"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="531dp" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="606dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IMDb\nTheTVDB\ntrakt\nComments\nWeb search\nYoutube search"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="606dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
